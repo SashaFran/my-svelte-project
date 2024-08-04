@@ -1,0 +1,39 @@
+/** @format */
+:root {
+  --main-bg-color-gunMetal: #2B303A;
+  --main-bg-color-NonPhotoBlue: #92DCE5;
+  --main-bg-color-LavenderBlush: #EEE5E9;
+  --main-bg-color-Gray: #7C7C7C;
+  --main-bg-color-ChilliRed: #D64933;
+
+  --main-fontFamily-Archivo: "Archivo", sans-serif;
+  --main-fontFamily-Roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: ver(--main-fontFamily-Roboto);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+#app {
+  width: 100vw;
+  text-align: center;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
